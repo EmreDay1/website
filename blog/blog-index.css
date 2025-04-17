@@ -1,0 +1,43 @@
+/* blog-index.css - Specific styles for blog index page */
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+    color: #333;
+    background-color: #fafafa;
+}
+
+td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Icons */
+.file-icon {
+    color: #8e8e93;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.folder-icon {
+    color: #0366d6;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+}

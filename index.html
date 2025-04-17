@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>EMRE DAYANGAC</title>
+<link rel="shortcut icon" href="favicon.png">
+<style>
+body {top: 0; left: 0; width: 99%; height: 97%;
+position: absolute; display: table}
+p {display: table-cell; vertical-align: middle; text-align: center}
+#timezone * {text-decoration: none;}
+</style>
+<script type="text/javascript">
+// declare time zone formatting
+let options = {
+  timeZone: 'Europe/Istanbul',
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric'
+},
+formatter = new Intl.DateTimeFormat([], options);
+// set time
+setInterval(
+  () => {
+    document.querySelector("#time").innerText = formatter.format(new Date());
+  }
+, 1000)
+</script>
+</head>
+<body>
+<p>
+<font size="7"><i><b>EMRE DAYANGAC</b></i></font> <br>
+<br>
+<img src="https://media.gettyimages.com/id/715045583/video/pan-down-from-sky-to-the-forum-stadium-parking-lot-empty.jpg?s=640x640&k=20&c=vpOpA-AKf0kEvz8F8Uya-My7g74g4EACSpu9udMmKog=" style="width:560px;"><br>
+<br>
+<span id=timezone>
+<i>
+<a href="https://24timezones.com/world_directory/current_istanbul_time.php">TIME IN ISTANBUL</a> - <span
+id="time">0:00 PM</span> EET<a href="https://24timezones.com/time-zone/trt"></a>
+</i>
+</span>
+<br><br>
+<a href="about.html">about</a> //
+<a href="faq.html">faq</a> //
+<a href="blog/index.html">blog</a> //
+<a href="portfolio.html">portfolio</a> //
+<a href="contact.html">contact</a>
+<br>
+<br>
+</p>
+</body>
+</html>
